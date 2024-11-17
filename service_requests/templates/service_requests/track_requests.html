@@ -1,0 +1,11 @@
+<form method="POST">
+    {% csrf_token %}
+    <label for="tracking_id">Tracking ID:</label>
+    <input type="text" id="tracking_id" name="tracking_id" required><br><br>
+
+    {% if error_message %}
+    <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+
+    <button type="submit">Track Request</button>
+</form>

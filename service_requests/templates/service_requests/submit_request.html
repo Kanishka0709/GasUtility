@@ -1,0 +1,16 @@
+<form method="POST">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="customer_name" required><br><br>
+
+    <label for="request_type">Request Type:</label>
+    <input type="text" id="request_type" name="request_type" required><br><br>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea><br><br>
+
+    <label>File Attachment:</label>
+    <input type="file" name="file_attachment"><br><br>
+
+    <button type="submit">Submit Request</button>
+</form>

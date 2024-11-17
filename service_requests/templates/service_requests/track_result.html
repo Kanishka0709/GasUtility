@@ -1,0 +1,8 @@
+<h1>Tracking Result</h1>
+<p><strong>Tracking ID:</strong> {{ service_request.tracking_id }}</p>
+<p><strong>Name:</strong> {{ service_request.customer_name }}</p>
+<p><strong>Request Type:</strong> {{ service_request.request_type }}</p>
+<p><strong>Description:</strong> {{ service_request.description }}</p>
+<p><strong>Submission Time:</strong> {{ service_request.submission_time }}</p>
+<p><strong>Resolution Time:</strong> {{ service_request.resolution_time|default:"Not Resolved Yet" }}</p>
+<p><strong>Status:</strong> {{ service_request.status }}</p>
